@@ -1,0 +1,11 @@
+<h1>TODOリスト</h1>
+
+<ul>
+  <% @articles.each do |article| %>
+    <li>
+      <%= link_to article.title, article %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "TODO追加", new_article_path %>
